@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ff454a4b" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#006400"
+        android:gravity="center"
+        android:text="请选择购买的项目"
+        android:textColor="#ffcfcfcf"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#ff1a1c1d" />
+    
+ 
+
+    <RadioGroup
+    	android:id="@+id/radiogroup1"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:layout_x="3px"
+    >
+    	<RadioButton
+    		android:id="@+id/radiobutton0"
+    		android:layout_width="wrap_content"
+    		android:layout_height="50dp"
+    		android:text="@string/radiobutton0"
+    	/>
+    	<RadioButton
+    		android:id="@+id/radiobutton1"
+    		android:layout_width="wrap_content"
+    		android:layout_height="50dp"
+    		android:text="@string/radiobutton1"
+    	/>
+    	<RadioButton
+    		android:id="@+id/radiobutton2"
+    		android:layout_width="wrap_content"
+    		android:layout_height="50dp"
+    		android:text="@string/radiobutton2"
+    	/>
+    	
+    </RadioGroup>
+    
+    <TextView
+        
+        android:id="@+id/agreement"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:textColor="#0000FF"
+        android:layout_marginTop="20dp"
+        android:text="金络康宝健康测评服务合同"
+        />
+    <CheckBox 
+         android:layout_width="wrap_content"   
+         android:layout_height="wrap_content" 
+         android:text="我同意" 
+         android:id="@+id/agree"
+        />  
+    
+        <RadioGroup
+    	android:id="@+id/radiogroup2"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:layout_x="3px"
+       >
+    	<RadioButton
+    		android:id="@+id/radiobutton9"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="支付宝支付"
+    	/>
+    	<RadioButton
+    		android:id="@+id/radiobutton10"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="微信支付"
+    	/>
+    	
+    	
+    </RadioGroup>
+     <Button 
+                android:id="@+id/purchase"
+	    	    android:layout_width="fill_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_marginLeft="15dip"
+	    	    android:layout_marginRight="15dip"
+	    	    android:layout_marginTop="16dip"
+	    	    android:gravity="center_vertical|center_horizontal"
+	    	    android:text="购买"
+	    	    android:textSize="20sp"
+	    	    android:background="@drawable/more_item_press"></Button>
+     
+     
+      <TextView
+        
+        android:id="@+id/remains"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"
+        android:text="您当前的余额是："
+        />
+      <Button 
+                android:id="@+id/remaining"
+	    	    android:layout_width="fill_parent"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_marginLeft="15dip"
+	    	    android:layout_marginRight="15dip"
+	    	    android:layout_marginTop="30dip"
+	    	    android:gravity="center_vertical|center_horizontal"
+	    	    android:text="余额查询"
+	    	    android:textSize="20sp"
+	    	    android:background="@drawable/more_item_press"></Button>
+     
+     
+     
+</LinearLayout>

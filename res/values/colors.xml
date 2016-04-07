@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="btn_bg_en">#7EA43C</color>
+    <color name="btn_bg_pressed">#A82E26</color>
+    <color name="btn_bg_unen">#484848</color>
+   <!--  <color name="tv">#33B715</color> --> 
+   <color name="tv">#383B37</color>
+    <color name="tv_black">#383B37</color>
+    <color name="iv">#ffffff</color>
+    <color name="iv_true">#27CBF4</color>
+    <color name="yellow">#EEEE00</color>
+     <color name="green">#00FF00</color>
+     <color name="lightblue">#ADD8E6</color> <!--亮蓝色 -->
+         <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="blue">#ffccddff</color>
+    <color name="grey">#58616d</color>
+    <color name="darkgrey">#ff404040</color>
+    <color name="toasterro">#9fd524</color>
+    <color name="lightgrey">#ff888888</color>
+    <color name="semitransparent">#80000000</color>
+    <color name="lightransparent">#a0000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="navpage">#FFE1E8EB</color>
+</resources>

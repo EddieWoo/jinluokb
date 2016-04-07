@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#27c4bc"
+        android:gravity="center"
+        android:text="读心术"
+        android:textColor="#ffcfcfcf"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+
+        <TextView
+        android:id="@+id/duxinshu"
+         android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="45dp"
+         android:textSize="17sp"
+         android:singleLine="false"  
+        android:maxLines="200"  
+        android:scrollbars="vertical" >
+         </TextView> 
+   <!--     
+<ImageView  
+        android:id="@+id/duxinshuimage"  
+        android:layout_below="@+id/duxinshu"
+        android:src="@drawable/yingyang"  
+        android:layout_width="wrap_content"  
+        android:layout_height="50dp" />    -->
+<ListView
+        android:id="@+id/lv"
+        android:layout_below="@+id/duxinshu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#27c4bc"
+        android:gravity="center"
+        android:text="解决方案"
+        android:textColor="#ffcfcfcf"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+     <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="50dp"
+      android:orientation="horizontal" >
+  
+    
+      <Button
+        android:id="@+id/nextzhenzhuang"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="15sp"
+        android:text="下一条症状对照" 
+        android:layout_weight="1"
+        android:background="@drawable/shapepink"/>
+      
+      </LinearLayout> 
+      
+         
+     
+     <RelativeLayout 
+      android:id="@+id/zhengz"
+      android:layout_width="match_parent"
+      android:layout_height="120dp"
+      android:layout_marginTop="100dp"
+      android:singleLine="false"  
+      android:maxLines="80" 
+      android:scrollbars="vertical">  
+     <TextView
+    android:id="@+id/zhengzhuang"
+    android:layout_width="match_parent"
+    android:layout_weight="1" 
+    android:textSize="17sp"
+    android:layout_height="wrap_content" 
+    android:text="症状："   
+    /> 
+    
+     </RelativeLayout>
+     
+
+     <LinearLayout 
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/zhengz"
+        android:orientation="horizontal"
+         android:layout_marginTop="20dp"
+        >
+   
+    <Button
+        android:id="@+id/shiliao"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="1dp"
+        android:textSize="17sp"
+        android:text="膳食调整" 
+        android:layout_weight="1"
+        android:background="@drawable/shapepink"/>
+    <Button
+        android:id="@+id/shanshi"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="17sp"
+        android:text="穴位按摩"
+        android:layout_weight="1"
+        android:background="@drawable/shapepink" />    
+
+         </LinearLayout>
+        
+     <LinearLayout 
+         android:id="@+id/buttons2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/buttons"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+        <Button
+        android:id="@+id/duxinshu"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="1dp"
+        android:textSize="17sp"
+        android:text="读心术" 
+        android:layout_weight="1"
+        android:background="@drawable/shapepink"/>
+        <Button
+        android:id="@+id/chakanxiangmu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="1dp"
+        android:textSize="17sp"
+        android:text="检测相关项目" 
+        android:layout_weight="1"
+        android:background="@drawable/shapepink"/>
+        
+          </LinearLayout>
+          
+         <ScrollView
+         android:id="@+id/scrollView_showMessages"
+         android:layout_width="fill_parent"
+         android:layout_height="400dp"
+         android:layout_marginTop="400dp"
+         >
+    <LinearLayout 
+        android:id="@+id/xiangmu"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/buttons"
+        android:orientation="horizontal"
+        android:singleLine="false"  
+        android:maxLines="80" 
+        android:scrollbars="vertical" 
+        >
+        
+    </LinearLayout>
+    
+    </ScrollView>
+    
+         <Button
+        android:id="@+id/homebutton"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:text="返回主页面"
+        android:background="@drawable/shapepink"
+         />
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ff454a4b" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#fa94a2"
+        android:gravity="center"
+        android:text="膳食调整"
+        android:textColor="#ffcfcfcf"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#ff1a1c1d" />
+ 
+    <TextView
+    android:id="@+id/shiliao"
+    android:layout_width="match_parent"
+    android:layout_weight="1" 
+    android:textSize="17sp"
+    android:layout_height="wrap_content" 
+    android:layout_marginTop="50dp"
+    android:text="shiliao"
+    android:singleLine="false"  
+    android:maxLines="80" 
+    android:scrollbars="vertical"></TextView> 
+    
+          <Button
+        android:id="@+id/mall"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"
+        android:text="前往商城" 
+        android:background="@drawable/shapepink"/>
+</RelativeLayout>

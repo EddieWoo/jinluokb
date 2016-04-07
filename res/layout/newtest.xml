@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="#27c4bc"
+        android:gravity="center"
+        android:text="搜索蓝牙设备"
+        android:textColor="#ffcfcfcf"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    
+
+	    	
+
+    
+<RelativeLayout 
+        android:layout_height="100dp" 
+        android:id="@+id/linearLayout1" 
+        android:layout_width="match_parent"
+        android:background="#27c4bc"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content" 
+            android:id="@+id/textView1" 
+            android:layout_height="50dp" 
+            android:layout_alignParentTop="true"
+            android:text="蓝牙开关:" 
+            android:textSize="20sp"
+            ></TextView>
+        
+        <ToggleButton android:layout_height="wrap_content" 
+            android:layout_width="wrap_content" 
+            android:text="ToggleButton" 
+            android:textSize="20sp"
+            android:checked="false" 
+            android:layout_toRightOf="@+id/textView1"
+            android:layout_alignParentTop="true"
+            android:id="@+id/tBtnBTSwitch"></ToggleButton>
+        
+        <Button 
+            android:layout_height="wrap_content" 
+            android:layout_width="wrap_content" 
+            android:id="@+id/btnSearchDevice" 
+            android:textSize="20sp"
+            android:text="@string/btsearchdevices" 
+            android:enabled="true"
+            android:layout_below="@+id/textView1"
+            android:layout_centerInParent="true"
+            android:background="#fa94a2"></Button>
+         
+    </RelativeLayout>
+    
+
+   <ListView 
+        android:layout_height="150dp" 
+        android:layout_width="match_parent" 
+        android:layout_below="@+id/btnSearchDevice"
+        
+         android:background="@drawable/jc_bg"
+        android:id="@+id/lvDevicesList"></ListView>
+   
+   
+    <RelativeLayout
+        android:id="@+id/ralativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+  <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="使用前请仔细阅读：\n\n1、开启蓝牙，搜索设备，点击yingyangBT，开始检测\n\n2、仪器连接蓝牙前将仪器戴圈的套在右手劳宫穴,另一极在仪器连接后先悬空3到5秒，之后再开始采集穴位数据"
+        android:textSize="18sp" />
+  <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:layout_below="@+id/textView3"
+        android:text="\n\n3、安装心脏起搏器严禁使用。"
+        android:textSize="18sp" />
+    </RelativeLayout>
+
+  
+        	
+</LinearLayout>

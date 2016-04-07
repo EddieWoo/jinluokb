@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent" >
+   <!--  <include layout="@layout/titlebar_home" /> -->
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="#27c4bc"
+        android:gravity="center"
+        android:text="设置"
+        android:textColor="#ffcfcfcf"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+     <RelativeLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="14dp"
+         android:background="@drawable/preference_single_item"
+         android:gravity="center_vertical" >
+
+         <TextView
+             android:id="@+id/textView1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:padding="8dp"
+             android:text="25天检测提醒"
+             android:textColor="#000"
+             android:textSize="20sp" />
+
+         <!--
+                 <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:scaleType="matrix"
+                android:src="@drawable/mm_submenu" />
+         -->
+
+         <Switch
+             android:id="@+id/notifycation"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_toRightOf="@+id/textView1"
+             android:layout_alignParentRight="true"
+             android:checked="true"
+            />
+     </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_last_item"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="开启蓝牙"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+           <Switch
+             android:id="@+id/bluetooth"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:checked="false"
+            /> 
+        
+       <!--      <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="matrix"
+                android:src="@drawable/mm_submenu" />  -->
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_last_item"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="开启音效"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+          <Switch
+             android:id="@+id/sound"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:checked="true"
+            />
+        
+       <!--      <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="matrix"
+                android:src="@drawable/mm_submenu" />  -->
+        </RelativeLayout>
+
+         
+           <RelativeLayout
+            android:id="@+id/clearcache"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/preference_first_item"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="清除缓存"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:scaleType="matrix"
+                android:src="@drawable/mm_submenu" />
+        </RelativeLayout>
+         
+        <RelativeLayout
+            android:id="@+id/cleanarchive"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_last_item"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="清除档案数据"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="matrix"
+                android:src="@drawable/mm_submenu" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/cleanhash"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_last_item"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="清除检测项目数据"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="matrix"
+                android:src="@drawable/mm_submenu" />
+        </RelativeLayout>
+  <RelativeLayout
+            android:id="@+id/about"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/preference_last_item"
+            android:clickable="true"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="关于金络康宝客户端"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <ImageView
+               android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:scaleType="matrix"
+                android:src="@drawable/mm_submenu" />
+        </RelativeLayout>
+        
+        
+</LinearLayout>

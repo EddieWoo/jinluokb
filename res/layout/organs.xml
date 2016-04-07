@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#27c4bc"
+        android:gravity="center"
+        android:text="五脏六腑"
+        android:textColor="#ffcfcfcf"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+<!-- 第一个block    textview命名规则 xxx，第一个数是所在块，第二个数是当前块中的行数，第三个数是在当前行的位置-->
+       <RelativeLayout
+           android:id="@+id/firstblock"
+           android:layout_width="match_parent"
+           android:layout_height="120dp"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:layout_marginTop="60dp"
+           android:background="@drawable/preference_single_item"
+           android:gravity="center_vertical"
+           android:orientation="vertical" >
+<!-- 第一排 -->
+           <TextView
+               android:id="@+id/tv111"
+               android:layout_marginTop="1dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:textSize="20sp"
+               android:text="心" />
+
+             <TextView
+                 android:id="@+id/tv112"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/tv111"
+                 android:layout_alignBottom="@+id/tv111"
+                 android:layout_centerInParent="true"
+                 android:text="肺"
+                 android:textSize="20sp" />
+
+             <TextView
+                 android:id="@+id/tv113"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/tv111"
+                 android:layout_alignBottom="@+id/tv111"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="10dp"
+                 android:text="肝"
+                 android:textSize="20sp" />
+
+ <!-- 第二排 -->
+ 
+   
+             <TextView
+               android:id="@+id/tv121"
+               android:layout_marginTop="40dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:textSize="20sp"
+               android:background="@color/yellow"
+               android:text="正常" />
+
+             <TextView
+                 android:id="@+id/tv122"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/tv121"
+                 android:layout_alignBottom="@+id/tv121"
+                 android:layout_centerInParent="true"
+                 android:background="@color/yellow"
+                 android:text="正常"
+                 android:textSize="20sp" />
+
+             <TextView
+                 android:id="@+id/tv123"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/tv121"
+                 android:layout_alignBottom="@+id/tv121"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="10dp"
+                 android:background="@color/yellow"
+                 android:text="正常"
+                 android:textSize="20sp" />
+             
+
+       
+ <!-- 第三排 -->
+             <TextView
+               android:id="@+id/tv131"
+               android:layout_marginTop="80dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:textSize="20sp"
+               android:background="@color/yellow"
+               android:text="正常" />
+
+             <TextView
+                 android:id="@+id/tv132"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/tv131"
+                 android:layout_alignBottom="@+id/tv131"
+                 android:layout_centerInParent="true"
+                 android:background="@color/yellow"
+                 android:text="正常"
+                 android:textSize="20sp" />
+
+             <TextView
+                 android:id="@+id/tv133"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/tv131"
+                 android:layout_alignBottom="@+id/tv131"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="10dp"
+                 android:background="@color/yellow"
+                 android:text="正常"
+                 android:textSize="20sp" />
+             
+       </RelativeLayout>
+       
+       
+<!-- 第二个block -->  
+       <RelativeLayout
+           android:id="@+id/secondblock"
+           android:layout_width="match_parent"
+           android:layout_height="120dp"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:layout_marginTop="190dp"
+           android:background="@drawable/preference_single_item"
+           android:gravity="center_vertical"
+           android:orientation="vertical" >
+<!-- 第1排 -->
+           <TextView
+               android:id="@+id/tv211"
+               android:layout_marginTop="1dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:textSize="20sp"
+               android:text="脾" />
+
+             <TextView
+                 android:id="@+id/tv212"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/tv211"
+                 android:layout_alignBottom="@+id/tv211"
+                 android:layout_centerInParent="true"
+                 android:text="肾"
+                 android:textSize="20sp" />
+
+             <TextView
+                 android:id="@+id/tv213"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/tv211"
+                 android:layout_alignBottom="@+id/tv211"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="10dp"
+                 android:text="胆"
+                 android:textSize="20sp" />
+
+ <!-- 第二排 -->
+             <TextView
+               android:id="@+id/tv221"
+               android:layout_marginTop="40dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:textSize="20sp"
+               android:background="@color/yellow"
+               android:text="正常" />
+
+             <TextView
+                 android:id="@+id/tv222"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/tv221"
+                 android:layout_alignBottom="@+id/tv221"
+                 android:layout_centerInParent="true"
+                 android:background="@color/yellow"
+                 android:text="正常"
+                 android:textSize="20sp" />
+
+             <TextView
+                 android:id="@+id/tv223"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/tv221"
+                 android:layout_alignBottom="@+id/tv221"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="10dp"
+                 android:background="@color/yellow"
+                 android:text="正常"
+                 android:textSize="20sp" />
+             
+       
+ <!-- 第三排 -->
+             <TextView
+               android:id="@+id/tv231"
+               android:layout_marginTop="80dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:textSize="20sp"
+               android:background="@color/yellow"
+               android:text="正常" />
+
+             <TextView
+                 android:id="@+id/tv232"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/tv231"
+                 android:layout_alignBottom="@+id/tv231"
+                 android:layout_centerInParent="true"
+                 android:background="@color/yellow"
+                 android:text="正常"
+                 android:textSize="20sp" />
+
+             <TextView
+                 android:id="@+id/tv233"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/tv231"
+                 android:layout_alignBottom="@+id/tv231"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="10dp"
+                 android:background="@color/green"
+                 android:text="正常"
+                 android:textSize="20sp" />
+             
+       </RelativeLayout>
+       
+       
+<!-- 第3个block -->  
+       <RelativeLayout
+           android:id="@+id/thirdblock"
+           android:layout_width="match_parent"
+           android:layout_height="120dp"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:layout_marginTop="320dp"
+           android:background="@drawable/preference_single_item"
+           android:gravity="center_vertical"
+           android:orientation="vertical" >
+<!-- 第1排 -->
+           <TextView
+               android:id="@+id/tv311"
+               android:layout_marginTop="1dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:textSize="20sp"
+               android:text="心包" />
+
+             <TextView
+                 android:id="@+id/tv312"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/tv311"
+                 android:layout_alignBottom="@+id/tv311"
+                 android:layout_centerInParent="true"
+                 android:text="三焦"
+                 android:textSize="20sp" />
+
+             <TextView
+                 android:id="@+id/tv313"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/tv311"
+                 android:layout_alignBottom="@+id/tv311"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="10dp"
+                 android:text="胃"
+                 android:textSize="20sp" />
+  
+ <!-- 第二排 -->
+             <TextView
+               android:id="@+id/tv321"
+               android:layout_marginTop="40dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:textSize="20sp"
+               android:background="@color/green"
+               android:text="正常" />
+
+             <TextView
+                 android:id="@+id/tv322"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/tv321"
+                 android:layout_alignBottom="@+id/tv321"
+                 android:layout_centerInParent="true"
+                 android:background="@color/green"
+                 android:text="正常"
+                 android:textSize="20sp" />
+
+             <TextView
+                 android:id="@+id/tv323"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/tv321"
+                 android:layout_alignBottom="@+id/tv321"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="10dp"
+                 android:background="@color/green"
+                 android:text="正常"
+                 android:textSize="20sp" />
+             
+       
+ <!-- 第三排 -->
+             <TextView
+               android:id="@+id/tv331"
+               android:layout_marginTop="80dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:textSize="20sp"
+               android:background="@color/green"
+               android:text="正常" />
+
+             <TextView
+                 android:id="@+id/tv332"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/tv331"
+                 android:layout_alignBottom="@+id/tv331"
+                 android:layout_centerInParent="true"
+                 android:background="@color/green"
+                 android:text="正常"
+                 android:textSize="20sp" />
+
+             <TextView
+                 android:id="@+id/tv333"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/tv331"
+                 android:layout_alignBottom="@+id/tv331"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="10dp"
+                 android:background="@color/green"
+                 android:text="正常"
+                 android:textSize="20sp" />
+             
+       </RelativeLayout>
+       
+       
+<!-- 第4个block -->  
+       <RelativeLayout
+           android:id="@+id/fourhblock"
+           android:layout_width="match_parent"
+           android:layout_height="120dp"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:layout_marginTop="450dp"
+           android:background="@drawable/preference_single_item"
+           android:gravity="center_vertical"
+           android:orientation="vertical" >
+<!-- 第1排 -->
+           <TextView
+               android:id="@+id/tv411"
+               android:layout_marginTop="1dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:textSize="20sp"
+               android:text="小肠" />
+
+             <TextView
+                 android:id="@+id/tv412"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/tv411"
+                 android:layout_alignBottom="@+id/tv411"
+                 android:layout_centerInParent="true"
+                 android:text="大肠"
+                 android:textSize="20sp" />
+
+             <TextView
+                 android:id="@+id/tv413"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/tv411"
+                 android:layout_alignBottom="@+id/tv411"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="10dp"
+                 android:text="膀胱"
+                 android:textSize="20sp" />
+
+        />  
+ <!-- 第二排 -->
+             <TextView
+               android:id="@+id/tv421"
+               android:layout_marginTop="40dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:textSize="20sp"
+               android:background="@color/green"
+               android:text="正常" />
+
+             <TextView
+                 android:id="@+id/tv422"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/tv421"
+                 android:layout_alignBottom="@+id/tv421"
+                 android:layout_centerInParent="true"
+                 android:background="@color/green"
+                 android:text="正常"
+                 android:textSize="20sp" />
+
+             <TextView
+                 android:id="@+id/tv423"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/tv421"
+                 android:layout_alignBottom="@+id/tv421"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="10dp"
+                 android:background="@color/green"
+                 android:text="正常"
+                 android:textSize="20sp" />
+             
+       
+ <!-- 第三排 -->
+             <TextView
+               android:id="@+id/tv431"
+               android:layout_marginTop="80dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:textSize="20sp"
+               android:background="@color/green"
+               android:text="正常" />
+
+             <TextView
+                 android:id="@+id/tv432"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/tv431"
+                 android:layout_alignBottom="@+id/tv431"
+                 android:layout_centerInParent="true"
+                 android:background="@color/green"
+                 android:text="正常"
+                 android:textSize="20sp" />
+
+             <TextView
+                 android:id="@+id/tv433"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/tv431"
+                 android:layout_alignBottom="@+id/tv431"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="10dp"
+                 android:background="@color/green"
+                 android:text="正常"
+                 android:textSize="20sp" />
+             
+       </RelativeLayout>
+       
+       <Button
+           android:id="@+id/modern"
+           android:layout_width="wrap_content"
+           android:layout_height="40dp"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentRight="true"
+           android:text="现代评价"
+           />
+     
+</RelativeLayout>

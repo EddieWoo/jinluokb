@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jinluokb"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.RECEIVE_SMS" />
+<uses-permission android:name="android.permission.GET_TASKS" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+        <!-- 电源管理权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 在SDCard中创建于删除文件的权限 -->  
+<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>  
+<!-- 往SDCard中写入数据的权限 -->  
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>  
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/largeicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+       <activity 
+            android:name="com.pkusz.setting.Setting"
+            android:label="@string/app_name">
+       </activity>
+       
+       <activity 
+            android:name="com.pkusz.homecenter.HomeCenter"
+            android:label="@string/app_name">
+       </activity>
+
+         <activity 
+            android:name="com.pkusz.homecenter.ModifyStatus"
+            android:label="@string/app_name">
+       </activity>
+       
+        <activity 
+            android:name="com.example.jinluokb.Helper"
+            android:label="使用帮助">
+       </activity>
+       <activity 
+            android:name="com.example.jinluokb.NewTest"
+            android:label="新建测试">
+       </activity>
+       <activity 
+            android:name="com.example.jinluokb.NewTester"
+            android:label="新建测试用户">
+       </activity>
+       <activity 
+            android:name="com.example.jinluokb.LoginActivity"
+            android:label="@string/app_name">
+       </activity>
+       
+       <activity 
+            android:name="com.example.jinluokb.Signup"
+            android:label="注册">
+       </activity>
+       
+       <activity 
+            android:name="com.example.jinluokb.Purchase"
+            android:label="购买">
+       </activity>
+         <activity 
+            android:name="com.example.jinluokb.Agreement"
+            android:label="协议">
+       </activity>
+       <activity 
+            android:name="com.example.insurance.Insurance"
+            android:label="保险服务">
+       </activity>
+       <activity 
+            android:name="com.example.insurance.InsuranceWeb"
+            android:label="保险服务">
+       </activity>
+        
+       <activity
+android:name="com.mob.tools.MobUIShell"
+android:theme="@android:style/Theme.Translucent.NoTitleBar"
+android:configChanges="keyboardHidden|orientation|screenSize"
+android:windowSoftInputMode="stateHidden|adjustResize">
+            </activity>  
+           <activity 
+            android:name="com.pkusz.stepcounter.SettingActivity"
+            android:label="计步器设置">
+          </activity>
+        <activity 
+            android:name="com.pkusz.stepcounter.StepCounterActivity"
+            android:label="计步器">
+          </activity>
+           <service 
+            android:name="com.pkusz.stepcounter.StepCounterService"
+            android:label="计步器">
+          </service>
+          <activity 
+            android:name="com.pkusz.bluetooth.RTMonitorActivity"
+            android:label="探测">
+          
+          </activity>
+           <activity 
+            android:name="com.pkusz.analyze.ShowList"
+            android:label="显示数据">
+          </activity>
+          <activity 
+            android:name="com.pkusz.analyze.Analyze"
+            android:label="分析数据">
+          </activity>
+          <activity 
+            android:name="com.pkusz.analyze.Archive"
+            android:label="档案管理">
+          </activity>
+           <activity 
+            android:name="com.pkusz.analyze.Symptoms"
+            android:label="症状对照表">
+          </activity>
+           <activity 
+            android:name="com.pkusz.analyze.Organs"
+            android:label="五脏六腑">
+          </activity>
+            <activity 
+            android:name="com.pkusz.analyze.ModernEvaluation"
+            android:label="现代评价">
+          </activity>
+          
+             <activity 
+            android:name="com.pkusz.analyze.Solution"
+            android:label="解决方案">
+          </activity>
+           <activity 
+            android:name="com.pkusz.analyze.Shiliao"
+            android:label="食疗方案">
+          </activity>
+          <activity 
+            android:name="com.pkusz.analyze.Shanshi"
+            android:label="膳食方案">
+          </activity>
+          <activity 
+            android:name="com.pkusz.analyze.ExaminationItem"
+            android:label="体检项目">
+          </activity>
+
+          <activity 
+            android:name="com.pkusz.setting.About"
+            android:label="关于">
+          </activity>
+          
+           <activity 
+            android:name="com.pkusz.analyze.Duxinshu"
+            android:label="读心术">
+          </activity>
+           <activity 
+            android:name="com.pkusz.util.PhotoViewer"
+            android:label=" ">
+          </activity>
+          
+		  <activity
+            android:name="com.pkusz.wechatpay.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+		  
+        <activity
+            android:name="com.example.jinluokb.PayActivity"
+            android:label="微信支付"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wxf2f565574a968187"/>
+            </intent-filter>
+        </activity>
+
+		        
+        <receiver
+            android:name="com.pkusz.wechatpay.simcpux.AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

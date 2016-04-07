@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ff454a4b" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ff303537"
+        android:gravity="center"
+        android:text="金络康宝健康经络测评服务合同"
+        android:textColor="#ffcfcfcf"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#ff1a1c1d" />
+    
+    
+    
+    <LinearLayout 
+        android:id="@+id/linearlayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+        android:id="@+id/jiafang"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="50dp"
+        android:text="甲方: 深圳维金康智能科技有限公司\n
+代表:李英辉\n
+电话:0755-82785915 0592-5064242\n
+网站：www.jinluo.net QQ：563187500\n
+"      
+        />
+        
+        </LinearLayout>
+        
+         <LinearLayout 
+        android:id="@+id/linearlayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout1">
+        <TextView
+        android:id="@+id/yifang"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text=" "
+        />
+     </LinearLayout>
+     
+        <LinearLayout 
+        android:id="@+id/linearlayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout2">
+          <TextView
+        android:id="@+id/xieyi"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:singleLine="false"  
+        android:maxLines="50"  
+        android:scrollbars="vertical"  
+        android:text=" 经双方协商，就乙方购买金络康宝健康测评服务一事达成如下条款。\n
+会员服务清单  \n
+\n
+1）、建立个人健康管理云服务档案。每月一次的金络康宝手机保健版版本体检（具体是：五脏六腑功能运行状态评价、提供针对性膳食指导、自我按摩穴位指导、读心图片改变心理状态）。\n
+\n
+2）、不定期聘请知名专家进行在线讲座。www.jinluo.net\n
+\n
+3）、帮助会员制定营养补充剂；针对健康状态,选择最合适、性价比高的膳食指导，选择质量最优化的保健食品之优惠选购。\n
+\n
+4）、通过APP推送信息为有健康隐患的会员做出提醒服务，但不是医疗诊断报告。\n
+\n
+5）、建议针对性体检项目与协助进一步的深度体检服务；避免滥用抗生素，避免就医多花冤枉钱。\n
+\n
+6）、 经络检测不同于临床诊断，其结果不能作为判断受检者是否患有某种疾病的诊断依据，但可作为疾病预防和个性化保健方案设计的重要参考，但不是医疗诊断报告。\n
+\n
+7）个人信息保密：健康信息属于个人隐私，除非得到您本人确认，此信息不会透露给第三方。\n
+\n
+本合同自手机客户端点击同意后生效，服务有效期自点击生效之日起365天内有效。\n
+        "
+        />
+        
+        </LinearLayout>
+   
+      
+        
+    
+</RelativeLayout>

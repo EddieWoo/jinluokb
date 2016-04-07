@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#27c4bc"
+        android:gravity="center"
+        android:text="关于"
+        android:textColor="#ffcfcfcf"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    
+    
+    <LinearLayout 
+        android:id="@+id/contents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+     <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="17sp"
+        android:text="英扬电子科技有限公司推出了划时代意义的 RTJL2010 型人体健康数字化感应仪。它不仅能够测量和显示人体的十二条经络的运行状况。而且能够透过经络运行情况的变化推测人体器官的一些情况。它的出现，使得人们几千年来，第 一次能够像先帝神农氏一样，对自己的身体状况有比较确切而全面地了解。有了它，人们可以对自身的身体状况随时进行监护，及时调理身体，及早发现严重疾病早期迹象，不必等到大病临身才措手不及。"
+        />
+        
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="74dp"
+        android:gravity="center"
+        android:text="Copyright ©2016-2026 \n深圳维金康智能科技有限公司"
+        android:textColor="#ffcfcfcf"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+"
+</RelativeLayout>
